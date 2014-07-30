@@ -1,4 +1,4 @@
 brittany-marie-site
 ===================
 
-My Portfolio Site
+My Portfolio Site.
