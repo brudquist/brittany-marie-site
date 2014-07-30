@@ -6,4 +6,19 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    = yield
+    .container
+      .header
+        %ul.nav.nav-pills.pull-right
+          %li.active
+            %a{href: "#"} Home
+          %li
+            %a{href: "#"} Portfolio
+          %li
+            %a{href: "#"} About
+          %li
+            %a{href: "#"} Contact
+      .row.content
+        .col-md-12
+          = yield
+      .footer
+        %p © Company 2014
