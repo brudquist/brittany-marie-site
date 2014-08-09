@@ -4,7 +4,7 @@
       Portfolio
 .row
   -@behance_images.each do |behance_image|
-    .col-md-3.col-xs-12.col-sm-12
+    .col-md-3.col-xs-12.col-sm-3
       %a{ class: 'thumbnail' }
         %img{ src: behance_image.cover_image, alt: behance_image.name }
         .caption
@@ -39,3 +39,21 @@
   .col-xs-2
     =image_tag 'ice_cream.png', class: [:'img-responsive']
     Ice Cream is my favorite desert.
+%hr
+.row.centered.about-me
+  .col-xs-12.col-sm-3
+    .thumbnail
+      =image_tag 'me_portrait.jpg', class: [:'img-responsive']
+  .col-xs-12.col-sm-9.no-center
+    %h2.no-center Contact Me
+    %p.no-center Let's keep in touch!
+    .social
+      =image_tag 'contact_icon.png'
+      brudquist@gmail.com
+    .social
+      =image_tag 'phone_icon.png'
+      763.772.5694
+    .social
+      =image_tag 'linkedin_icon.png'
+    .social
+      =image_tag 'behance_icon.png'
