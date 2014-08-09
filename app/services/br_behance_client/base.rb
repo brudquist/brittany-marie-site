@@ -6,7 +6,11 @@ module BRBehanceClient
     end
 
     def client
-      @client ||= Behance::Client.new(access_token: BEHANCE_ACCESS_TOKEN)
+      if Rails.env.production?
+        @client ||= Behance::Client.new(access_token: ENV['BEHANCE_ACCESS_TOKEN'])
+      else
+        @client ||= Behance::Client.new(access_token: BEHANCE_ACCESS_TOKEN)
+      end
     end
 
   end
