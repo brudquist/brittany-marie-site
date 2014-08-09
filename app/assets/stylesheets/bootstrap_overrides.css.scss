@@ -1,0 +1,14 @@
+.thumbnail {
+  border: none;
+  img {
+    border: 10px solid $border-green;
+  }
+  .caption {
+    margin-top: 10px;
+    background-color: $border-green;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+  }
+}

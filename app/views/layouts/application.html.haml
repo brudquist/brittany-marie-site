@@ -8,15 +8,37 @@
   %body
     .container
       .header
-        %ul.nav.nav-pills.pull-right
-          %li.active
-            %a{href: "#"} Home
-          %li
-            %a{href: "#"} Portfolio
-          %li
-            %a{href: "#"} About
-          %li
-            %a{href: "#"} Contact
+        .navbar
+          .container
+
+            .col-xs-12.col-sm-8
+              %ul.nav.navbar-nav
+                %li.active
+                  %a{href: "#"} Home
+                %li
+                  %a{href: "#"} Portfolio
+                %li
+                  %a{href: "#"} About
+                %li
+                  %a{href: "#"} Contact
+            .col-xs-12.col-sm-4
+              %ul.social.navbar-nav.nav.pull-right
+                %li
+                  =image_tag 'behance_icon.png'
+                %li
+                  =image_tag 'linkedin_icon.png'
+                %li
+                  =image_tag 'contact_icon.png'
+                  
+    .container-fluid
+      .row
+        .col-xs-12.no-padding
+          .banner
+            .container
+              =image_tag 'bmarie_logo.jpg', class: [:logo]
+              %span.tagline Designer | Freelancer
+
+    .container
       .row.content
         .col-md-12
           = yield

@@ -1,9 +1,41 @@
 .row
-  .col-md-3
-    image 1
-  .col-md-3
-    image 2
-  .col-md-3
-    image 3
-  .col-md-3
-    image 4
+  .col-xs-12
+    %h2
+      Portfolio
+.row
+  -@behance_images.each do |behance_image|
+    .col-md-3.col-xs-12.col-sm-12
+      %a{ class: 'thumbnail' }
+        %img{ src: behance_image.cover_image, alt: behance_image.name }
+        .caption
+          =behance_image.name
+%hr
+.row
+  .col-xs-12
+    %h2 About Me
+    %p
+      Hello! I’m Brittany, a born and raised Minnesotan with a passion for design.
+      %br
+      I specialize in responsive web design, UX/UI, branding and illustration.
+
+    %p
+      Here are a few of my favorite things...
+.row.centered.about-images
+  .col-xs-2
+    =image_tag 'minnesota.png', class: [:'img-responsive']
+    The Great State of Minnesota
+  .col-xs-2
+    =image_tag 'caribou_coffee.png', class: [:'img-responsive']
+    Caribou Coffee
+  .col-xs-2
+    =image_tag 'star_wars.png', class: [:'img-responsive']
+    I'm a huge Star Wars fan.  Fan not nerd.
+  .col-xs-2
+    =image_tag 'batman.png', class: [:'img-responsive']
+    Batman is my favorite superhero.
+  .col-xs-2
+    =image_tag 'cat.png', class: [:'img-responsive']
+    My extended family consists of my cat Stinker and my plant Charlie.
+  .col-xs-2
+    =image_tag 'ice_cream.png', class: [:'img-responsive']
+    Ice Cream is my favorite desert.
