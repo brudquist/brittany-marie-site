@@ -15,6 +15,7 @@ gem 'behance', '~> 0.3'
 
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
+gem 'newrelic_rpm'
 
 group :development do
   gem 'pry-rails'
