@@ -1,7 +1,6 @@
 .row
   .col-xs-12
-    %h2
-      Portfolio
+    %h2#portfolio Portfolio
 .row
   -@behance_images.each do |behance_image|
     .col-md-3.col-xs-12.col-sm-3
@@ -40,7 +39,7 @@
     =image_tag 'ice_cream.png', class: [:'img-responsive']
     Ice Cream is my favorite desert.
 %hr
-.row.centered.about-me
+.row.centered.about-me#contact-me
   .col-xs-12.col-sm-3
     .thumbnail
       =image_tag 'me_portrait.jpg', class: [:'img-responsive']
