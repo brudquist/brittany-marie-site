@@ -10,16 +10,13 @@
   border-bottom: 1px solid $text-gray;
   .logo {
     max-height: 200px;
-    max-width: 200px;
-
   }
   .tagline {
-    alignment-baseline: middle;
     font-size: 65px;
     margin-left: 80px;
     text-transform: uppercase;
     font-weight: 700;
-
+    vertical-align: middle;
   }
 }
 li {
