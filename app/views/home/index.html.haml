@@ -4,7 +4,7 @@
 .row
   -@behance_images.each do |behance_image|
     .col-md-3.col-xs-12.col-sm-3
-      %a{ class: 'thumbnail' }
+      %a.thumbnail.modal-trigger{ href: '#', data: { modal_content_url: project_url(behance_image.id), title: behance_image.name } }
         %img{ src: behance_image.cover_image, alt: behance_image.name }
         .caption
           =behance_image.name
@@ -16,7 +16,6 @@
       Hello! I’m Brittany, a born and raised Minnesotan with a passion for design.
       %br
       I specialize in responsive web design, UX/UI, branding and illustration.
-
     %p
       Here are a few of my favorite things...
 .row.centered.about-images
