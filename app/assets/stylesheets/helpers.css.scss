@@ -10,10 +10,16 @@
 .no-padding {
   padding: 0;
 }
-.social {
+.social-horizontal {
   img {
+    height: 20px;
+    margin: 5px;
+  }
+}
+.social-vertical {
+  img {
+    width: 20px;
     height: 25px;
     margin: 5px;
   }
 }
-

@@ -25,7 +25,7 @@ li {
     color: $text-gray;
     margin-right: 30px;
   }
-  & > a:first-child {
+  &:first-child {
     padding-left: 0;
     font-size: 15px;
   }

@@ -1,4 +1,7 @@
-=@project.name
-=image_tag @project.cover_image
+%p
+  =@project.description
+%p
+  =image_tag @project.cover_image
 -@project.module_images.each do |module_image|
-  =image_tag module_image.image_url
+  %p
+    =image_tag module_image.image_url, class: [:thumbnail, :'img-responsive']
