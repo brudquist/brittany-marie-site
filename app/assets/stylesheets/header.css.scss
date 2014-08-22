@@ -32,6 +32,33 @@ li {
 }
 
 .navbar {
+  a {
+    span.title {
+      margin-top: 10px;
+    }
+    &:hover {
+      background-color: transparent !important;
+      span.title {
+        padding-left: 0;
+      }
+      .hover-cube {
+        img {
+          display: inline-block;
+        }
+      }
+    }
+    span.title {
+      padding-left: 18px;
+      vertical-align: center;
+    }
+    .hover-cube {
+      img {
+        display: none;
+
+      }
+    }
+  }
+
   .navbar-toggle {
     float:left;
   }
@@ -49,6 +76,14 @@ li {
     margin: 0;
     padding:0;
     border: 0;
+    a {
+      color: #fff !important;
+      font-weight: 700;
+      &:hover {
+        background-color: transparent !important;
+
+      }
+    }
     .container {
       background-color: $border-green;
     }

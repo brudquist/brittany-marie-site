@@ -9,15 +9,27 @@
 
       %ul.nav.navbar-nav
         %li
-          %a{href: "/"} Home
+          %a{href: "/"}
+            %span.hover-cube
+              = image_tag 'hover_icon.jpg'
+            %span.title Home
         %li
-          %a{href: "/#portfolio"} Portfolio
+          %a{href: "/#portfolio"}
+            %span.hover-cube
+              = image_tag 'hover_icon.jpg'
+            %span.title Portfolio
         %li
-          %a{href: "/#contact-me"} About
+          %a{href: "/#about"}
+            %span.hover-cube
+              = image_tag 'hover_icon.jpg'
+            %span.title About
         %li
-          %a{href: "/#contact-me"} Contact
+          %a{href: "/#contact-me"}
+            %span.hover-cube
+              = image_tag 'hover_icon.jpg'
+            %span.title Contact
 
-      %ul.social-horizontal.navbar-nav.nav.pull-right.nav-social-container
+      %ul.social-horizontal.navbar-nav.nav.pull-right.nav-social-container.hidden-xs
         %li
           =image_tag 'behance_icon.png'
         %li
