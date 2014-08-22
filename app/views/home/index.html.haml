@@ -2,60 +2,12 @@
   .col-xs-12
     %h2#portfolio Portfolio
 .row
-  -@behance_images.each do |behance_image|
-    .col-md-3.col-xs-12.col-sm-3
-      %a{ class: 'thumbnail' }
-        %img{ src: behance_image.cover_image, alt: behance_image.name }
-        .caption
-          =behance_image.name
+  =render partial: 'behance_image', collection: @behance_images
 %hr
-.row
-  .col-xs-12
-    %h2 About Me
-    %p
-      Hello! I’m Brittany, a born and raised Minnesotan with a passion for design.
-      %br
-      I specialize in responsive web design, UX/UI, branding and illustration.
-
-    %p
-      Here are a few of my favorite things...
-.row.centered.about-images
-  .col-xs-2
-    =image_tag 'minnesota.png', class: [:'img-responsive']
-    The great state of Minnesota
-  .col-xs-2
-    =image_tag 'caribou_coffee.png', class: [:'img-responsive']
-    Caribou Coffee
-  .col-xs-2
-    =image_tag 'star_wars.png', class: [:'img-responsive']
-    All things Star Wars
-  .col-xs-2
-    =image_tag 'batman.png', class: [:'img-responsive']
-    Batman
-  .col-xs-2
-    =image_tag 'cat.png', class: [:'img-responsive']
-    Cats
-  .col-xs-2
-    =image_tag 'ice_cream.png', class: [:'img-responsive']
-    Ice Cream
+=render partial: 'about'
 %hr
-  .row.centered.about-me#contact-me
-    .col-xs-12.center
-      %h2 Contact Me
+.row.centered.about-me#contact-me
+  .col-xs-12.center
+    %h2 Contact Me
 .row
-  .col-xs-6
-    .thumbnail.pull-right
-      =image_tag 'me_portrait_sized.png', class: [:'img-responsive']
-  .col-xs-6
-    %p.no-center
-      Thanks for checking out my site!
-      %br
-      Please feel free to contact me for more information.
-      %br
-      My resume is available upon request.
-    .social-horizontal
-      =image_tag 'contact_icon.png'
-      brittany.marie.design@gmail.com
-    .social-horizontal
-      =image_tag 'phone_icon.png'
-      763.772.5694
+  =render partial: 'contact'

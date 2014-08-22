@@ -1,0 +1,6 @@
+.col-lg-3.col-xs-12.col-sm-12.col-md-6
+  %a.modal-trigger{ href: '#', data: { modal_content_url: project_url(behance_image.id), title: '' } }
+    .thumbnail
+      %img{ src: behance_image.cover_image, alt: behance_image.name }
+      .caption.visible-lg-block
+        =behance_image.name

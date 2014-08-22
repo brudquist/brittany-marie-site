@@ -11,35 +11,18 @@
       .header
         .navbar
           .container
-
-            .col-xs-12.col-sm-8
-              %ul.nav.navbar-nav
-                %li.active
-                  %a{href: "/#"} Home
-                %li
-                  %a{href: "/#portfolio"} Portfolio
-                %li
-                  %a{href: "/#contact-me"} About
-                %li
-                  %a{href: "/#contact-me"} Contact
-            .col-xs-12.col-sm-4
-              %ul.social-horizontal.navbar-nav.nav.pull-right
-                %li
-                  =image_tag 'behance_icon.png'
-                %li
-                  =image_tag 'linkedin_icon.png'
-                %li
-                  =image_tag 'github_icon.png'
-                %li
-                  =image_tag 'contact_icon.png'
-
+            =render partial: 'layouts/menu'
     .container-fluid
       .row
         .col-xs-12.no-padding
           .banner
             .container
-              =image_tag 'bmarie_logo.jpg', class: [:logo]
-              %span.tagline Designer | Freelancer
+
+              .visible-lg-inline-block
+                =image_tag 'bmarie_logo.jpg', class: [:logo]
+              .hidden-lg
+                =image_tag 'bmarie_logo.jpg', class: [:logo, :'center-block']
+              %span.tagline.hidden-sm.hidden-xs.hidden-md Designer | Freelancer
 
     .container
       .row.content
