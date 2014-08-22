@@ -1,20 +1,28 @@
-.col-xs-12.col-sm-8
-  %ul.nav.navbar-nav
-    %li.active
-      %a{href: "/#"} Home
-    %li
-      %a{href: "/#portfolio"} Portfolio
-    %li
-      %a{href: "/#contact-me"} About
-    %li
-      %a{href: "/#contact-me"} Contact
-.col-xs-12.col-sm-4
-  %ul.social-horizontal.navbar-nav.nav.pull-right
-    %li
-      =image_tag 'behance_icon.png'
-    %li
-      =image_tag 'linkedin_icon.png'
-    %li
-      =image_tag 'github_icon.png'
-    %li
-      =image_tag 'contact_icon.png'
+
+.navbar{role: 'navigation'}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.mr-liney= image_tag 'mr_liney.png'
+    .navbar-collapse.collapse
+
+      %ul.nav.navbar-nav
+        %li
+          %a{href: "/"} Home
+        %li
+          %a{href: "/#portfolio"} Portfolio
+        %li
+          %a{href: "/#contact-me"} About
+        %li
+          %a{href: "/#contact-me"} Contact
+
+      %ul.social-horizontal.navbar-nav.nav.pull-right.nav-social-container
+        %li
+          =image_tag 'behance_icon.png'
+        %li
+          =image_tag 'linkedin_icon.png'
+        %li
+          =image_tag 'github_icon.png'
+        %li
+          =image_tag 'contact_icon.png'

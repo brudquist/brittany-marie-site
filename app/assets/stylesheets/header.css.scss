@@ -30,9 +30,27 @@ li {
     font-size: 15px;
   }
 }
+
 .navbar {
-  .container {
-    margin-left: 0;
-    padding-left: 0;
+  .navbar-toggle {
+    float:left;
+  }
+  .mr-liney {
+    img {
+      width: 30px;
+    }
+  }
+
+
+}
+
+@media (max-width: $screen-xs-max) {
+  .navbar {
+    margin: 0;
+    padding:0;
+    border: 0;
+    .container {
+      background-color: $border-green;
+    }
   }
 }
