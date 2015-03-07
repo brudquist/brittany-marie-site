@@ -13,6 +13,7 @@ gem 'autoprefixer-rails'
 gem 'activerecord-session_store'
 gem 'behance', '~> 0.3'
 gem 'jquery-turbolinks'
+gem 'puma'
 
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
