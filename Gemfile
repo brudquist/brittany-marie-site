@@ -12,6 +12,7 @@ gem 'sass-rails', '>= 3.2'
 gem 'autoprefixer-rails'
 gem 'activerecord-session_store'
 gem 'behance', '~> 0.3'
+gem 'jquery-turbolinks'
 
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production

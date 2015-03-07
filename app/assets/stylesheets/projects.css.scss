@@ -1,5 +1,10 @@
 #project {
   p {
     margin: 30px 0;
+    &.non-xhr-request {
+      img {
+        margin: 0 auto;
+      }
+    }
   }
 }
