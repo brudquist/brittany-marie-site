@@ -16,3 +16,4 @@
 /tmp
 /config/initializers/secret_token.rb
 /config/initializers/behance_api.rb
+/.idea
