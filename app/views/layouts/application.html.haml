@@ -14,12 +14,10 @@
         .col-xs-12.no-padding
           .banner
             .container
-
-              .visible-lg-inline-block
-                =image_tag 'bmarie_logo.jpg', class: [:logo]
-              .hidden-lg
-                =image_tag 'bmarie_logo.jpg', class: [:logo, :'center-block']
-              %span.tagline.hidden-sm.hidden-xs.hidden-md Designer | Freelancer
+              .row
+                .col-xs-12.centered
+                  .visible-lg-inline-block
+                    =image_tag 'bmarie_logo.jpg', class: [:logo, :'center-block']
 
     .container
       .row.content
