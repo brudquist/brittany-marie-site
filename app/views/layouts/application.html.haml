@@ -13,13 +13,13 @@
     =render partial: 'layouts/menu'
     .container-fluid
       .row
-        .col-xs-12.no-padding
+        .col-xs-12.no-padding.reapeating-image
           .banner
             .container
               .row
                 .col-xs-12.centered
-                  .visible-lg-inline-block
-                    =image_tag 'bmarie_logo.jpg', class: [:logo, :'center-block']
+                  .inline
+                    =image_tag 'bmarie_logo.svg', class: [:logo, :'center-block']
 
     .container
       .row.content
