@@ -15,6 +15,9 @@ gem 'behance', '~> 0.3'
 gem 'jquery-turbolinks'
 gem 'puma'
 
+gem 'pony'
+gem 'formtastic-bootstrap'
+
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 gem 'newrelic_rpm'

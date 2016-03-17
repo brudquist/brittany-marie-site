@@ -1,15 +1,12 @@
 
 .banner {
-  background: image-url("banner_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding: 40px;
   margin-bottom: 40px;
-  border-top: 1px solid $text-gray;
-  border-bottom: 1px solid $text-gray;
   .logo {
-    max-height: 200px;
+    max-height: 400px;
   }
   .tagline {
     font-size: 65px;
@@ -88,4 +85,9 @@ li {
       background-color: $border-green;
     }
   }
+}
+
+.reapeating-image {
+   background-image: image-url("background.png");
+   background-repeat: repeat;
 }

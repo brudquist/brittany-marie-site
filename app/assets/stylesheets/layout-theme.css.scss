@@ -1,0 +1,11 @@
+.top-level-section {
+  padding: 100px 15px;
+}
+
+.blue-color-background {
+  @extend .top-level-section;
+  background-color: #ddefee;
+}
+.footer {
+  background-color: #ddefee;
+}
