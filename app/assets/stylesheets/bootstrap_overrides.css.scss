@@ -1,12 +1,7 @@
 .thumbnail {
   border: none;
-  .caption {
-    margin-top: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 700;
-  }
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,6 @@
 .container-fluid#contact-form
   .row
-    .col-xs-4.col-xs-offset-4
+    .col-xs-4.col-xs-offset-4 
       = semantic_form_for @contact, url: contacts_path(anchor: 'contact-form') do |f|
         =f.input :full_name
         =f.input :email_address

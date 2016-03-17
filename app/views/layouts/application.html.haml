@@ -11,9 +11,9 @@
   %body
 
     =render partial: 'layouts/menu'
-    .container-fluid.top-level-section
+    .container-fluid.top-level-section.reapeating-image
       .row
-        .col-xs-12.no-padding.reapeating-image
+        .col-xs-12.no-padding
           .banner
             .container
               .row
@@ -25,7 +25,7 @@
       .row.content
         .col-md-12
           = yield
-      .footer
+      .row.footer
         %p &copy; #{ Date.today.year } Brittany Marie Design
   =render partial: '/shared/modal'
   = javascript_include_tag "application", "data-turbolinks-track" => true
