@@ -1,5 +1,10 @@
 #project {
+  h3 {
+    font-size: 30px;
+    color: #74747a;
+  }
   p {
+    font-size: 15px;
     margin: 30px 0;
     &.non-xhr-request {
       img {
