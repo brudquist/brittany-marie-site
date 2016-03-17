@@ -1,6 +1,13 @@
 class HomeController < ApplicationController
   def index
-    @behance_images = BRBehanceClient::Projects.new.all
+    @contact = Contact.new(contact_params)
+  end
+
+  private
+
+  def contact_params
+    return unless params[:contact]
+    super
   end
 
 end

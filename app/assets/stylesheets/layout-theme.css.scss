@@ -1,0 +1,8 @@
+.top-level-section {
+  padding: 100px 0;
+}
+
+.blue-color-background {
+  @extend .top-level-section;
+  background-color: #ddefee;
+}

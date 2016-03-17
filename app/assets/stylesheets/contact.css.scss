@@ -1,0 +1,31 @@
+#contact-form {
+  .form-group {
+    background-color: white;
+    text-align: left !important;
+    .form-label label {
+      padding: 10px 0 0 15px;
+      color: #939597;
+      font-weight:normal;
+    }
+    input, textarea {
+      padding-left: 15px;
+      color: #58585b;
+      font-weight: normal;
+      outline: none;
+      border: none !important;
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+  }
+  .help-block {
+    padding: 0 0 15px 15px;
+  }
+  .form-actions input.btn {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    background-color: #ee3427;
+    color: #fff;
+  }
+}

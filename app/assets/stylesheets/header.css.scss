@@ -1,13 +1,10 @@
 
 .banner {
-  xxxbackground: image-url("banner_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding: 40px;
   margin-bottom: 40px;
-  xxxborder-top: 1px solid $text-gray;
-  xxxborder-bottom: 1px solid $text-gray;
   .logo {
     max-height: 300px;
   }
@@ -89,3 +86,8 @@ li {
     }
   }
 }
+
+// .reapeating-image {
+//   background-image: image-url("background_graphic.svg");
+//   background-repeat: repeat;
+// }
