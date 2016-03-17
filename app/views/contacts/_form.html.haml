@@ -1,8 +1,4 @@
 .container-fluid#contact-form
-  -if flash[:success]
-    .row
-      .col-xs-4.col-xs-offset-4
-        .alert.alert-success= flash[:success]
   .row
     .col-xs-4.col-xs-offset-4
       = semantic_form_for @contact, url: contacts_path(anchor: 'contact-form') do |f|
@@ -11,4 +7,7 @@
         =f.input :comments, label: "Questions, comments and such", as: :text, input_html: { rows: 3 }
 
         =f.actions do
-          =f.action :submit, label: 'SEND', button_html: { class: 'col-xs-12 btn' }
+          -if @contact_created
+            =f.action :submit, label: 'SUCCESS! YOUR MESSAGE HAS BEEN RECEIVED!', button_html: { class: 'col-xs-12 btn btn-sent', disabled: true }
+          -else
+            =f.action :submit, label: 'SEND', button_html: { class: 'col-xs-12 btn' }

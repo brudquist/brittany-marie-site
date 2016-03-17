@@ -21,6 +21,13 @@
   .help-block {
     padding: 0 0 15px 15px;
   }
+  .form-actions input.btn-sent {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    background-color: #fff !important;
+    color: #ee3427 !important;
+  }
   .form-actions input.btn {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;

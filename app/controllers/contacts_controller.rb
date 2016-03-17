@@ -3,7 +3,9 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.save
       flash[:success] = 'Thank you for contacting me.'
-      redirect_to root_path
+      @contact = Contact.new
+      @contact_created = true
+      render '/home/index'
     else
       render '/home/index'
     end
