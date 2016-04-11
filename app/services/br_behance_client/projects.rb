@@ -3,6 +3,7 @@ module BRBehanceClient
     attr_accessor :user_projects_hash
 
     def all
+      return unless user_projects_hash.present?
       user_projects_hash.map do |project|
         Project.new(id: project['id'], cover_image: project['covers']['404'], name: project['name'])
       end
